@@ -1,21 +1,22 @@
 # 🌱 Farmesh
 
-> **AI-assisted coordination dashboard for Canadian local food networks.**  
-> Connecting local farmers, market vendors, and Canadian buyers through intelligent supply and demand matching — powered by [Backboard.io](https://backboard.io) AI agents.
+**AI-powered coordination platform for Canadian local food networks.**
 
-Farmesh is a lightweight coordination platform built to strengthen Canadian local food systems. It helps nearby farms and businesses coordinate produce supply and demand more efficiently — reducing food waste, helping Canadian farmers sell more of their harvest, and making it easier for local businesses to source fresh, nearby food.
+Farmesh helps local farms and food businesses coordinate produce supply and demand more efficiently. Farmers can post what they have available, buyers can post what they need, and an AI agent pipeline handles the matching — reducing food waste, helping Canadian farmers sell more of their harvest, and making it easier for local businesses to source fresh, nearby food.
 
 > **Not a marketplace.** Farmesh is an AI coordination layer with transparent reasoning — every match shows *why* it was proposed, *what preferences* were used, and *what tradeoffs* were made.
 
 ---
 
-## 🗺️ Three Main Surfaces
+## 🗺️ How It Works
+
+Farmesh has three main surfaces:
 
 | Surface | Who it's for | What it does |
 |---|---|---|
 | **Farmer Dashboard** | Farms, market growers, greenhouse operators, orchards | Post supply listings, view matches, track listing status |
 | **Buyer Dashboard** | Restaurants, grocers, cafes, caterers, food co-ops | Post demand requests, confirm split orders, view ranked matches |
-| **Admin / Demo Dashboard** | Admins, judges, demo viewers | Live system state, AI agent timeline, memory insights, regional stats |
+| **Admin Dashboard** | Admins | Live system state, AI agent timeline, memory insights, regional stats |
 
 ---
 
@@ -34,8 +35,6 @@ Farmesh is a lightweight coordination platform built to strengthen Canadian loca
 ---
 
 ## 🤖 AI Agent Pipeline
-
-All AI orchestration is handled by **Backboard.io** agents:
 
 | Agent | Role |
 |---|---|
@@ -96,7 +95,7 @@ farmesh/
 │   │   ├── supabase.ts         # Supabase client
 │   │   └── supabase/           # Supabase SSR helpers
 │   ├── types/                  # TypeScript type definitions
-│   ├── middleware.ts            # Role-based route protection (Supabase SSR)
+│   ├── middleware.ts           # Role-based route protection (Supabase SSR)
 │   ├── next.config.ts
 │   ├── postcss.config.mjs
 │   └── eslint.config.mjs
@@ -108,7 +107,7 @@ farmesh/
 │   └── README.md
 ├── package.json                # Root workspace package
 └── package-lock.json
-```
+``` 
 
 ---
 
@@ -134,41 +133,10 @@ farmesh/
 
 ---
 
-## 🌾 Key Demo Scenario
-
-> An Ontario restaurant requests **100 lbs of salad greens, organic preferred**.
-
-1. Buyer submits free-text request → **Intake Agent** parses it
-2. **Normalization Agent** standardizes product, unit, and region
-3. **Demand Interpretation Agent** reads buyer memory: *organic preference: high, allows substitutions: yes*
-4. **Matching Agent** finds:
-   - 🥬 Green Valley Farm (Ontario) — 60 lbs mixed baby greens
-   - 🌿 Riverbend Produce (Ontario) — 40 lbs certified organic spinach
-   - Proposes a **split match** from two nearby Ontario vendors with full explanation
-5. Buyer confirms in the Buyer Dashboard
-6. **Coordination Agent** updates all statuses, notifies both vendors
-7. Admin Dashboard shows the live match, agent actions, and memory signals
-
-### Seeded Demo Data
-
-**Vendors (Ontario)**
-- Green Valley Farm
-- Riverbend Produce
-- Maple Leaf Organics
-
-**Buyers**
-- Toronto Bistro
-- Waterloo Corner Grocer
-- Hamilton Community Food Hub
-
----
-
 ## 🔌 API Routes
 
 | Method | Route | Description |
 |---|---|---|
-| `POST` | `/api/demo/login` | Demo role-based login |
-| `POST` | `/api/demo/logout` | Demo logout |
 | `POST` | `/api/listings` | Create a new supply listing |
 | `GET` | `/api/listings` | List all active listings |
 | `PATCH` | `/api/listings/:id` | Update a listing |
@@ -197,7 +165,7 @@ farmesh/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MizuPanda/farmesh.git
+git clone https://github.com/alexou8/Farmesh.git
 cd farmesh
 ```
 
@@ -220,8 +188,6 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
 BACKBOARD_API_KEY=your_backboard_api_key
 BACKBOARD_WORKFLOW_URL=your_backboard_workflow_endpoint
 ```
-
-> See the Keys document for full details on obtaining these values.
 
 ### 4. Run the development server
 
