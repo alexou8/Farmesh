@@ -1,0 +1,122 @@
+{
+  "listings": [
+    {
+      "id": "l_seed_001",
+      "vendorId": "f1",
+      "rawInput": "60 lbs mixed baby greens harvested this week, available for Toronto buyers",
+      "product": "Mixed Baby Greens",
+      "pricePerUnit": 4.6,
+      "quantity": 60,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07",
+      "expirationDate": "2026-03-14"
+    },
+    {
+      "id": "l_seed_002",
+      "vendorId": "f2",
+      "rawInput": "Certified organic spinach, 50 lbs available",
+      "product": "Organic Spinach",
+      "pricePerUnit": 4.9,
+      "quantity": 50,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07",
+      "expirationDate": "2026-03-13"
+    },
+    {
+      "id": "l_seed_003",
+      "vendorId": "f1",
+      "rawInput": "Fresh carrots, 120 lbs, bulk price",
+      "product": "Carrots",
+      "pricePerUnit": 1.8,
+      "quantity": 120,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07",
+      "expirationDate": "2026-03-20"
+    },
+    {
+      "id": "l_seed_004",
+      "vendorId": "f3",
+      "rawInput": "Heirloom tomatoes, 30 lbs ready for delivery",
+      "product": "Heirloom Tomatoes",
+      "pricePerUnit": 6.5,
+      "quantity": 30,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07",
+      "expirationDate": "2026-03-12"
+    },
+    {
+      "id": "l_seed_005",
+      "vendorId": "f1",
+      "rawInput": "Yellow onions, 80 lbs, local pickup or delivery",
+      "product": "Yellow Onions",
+      "pricePerUnit": 2.1,
+      "quantity": 80,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07",
+      "expirationDate": "2026-03-18"
+    }
+  ],
+  "requests": [
+    {
+      "id": "r_seed_001",
+      "buyerId": "b1",
+      "rawInput": "Need 100 lbs of salad greens for weekend service",
+      "product": "Salad Greens",
+      "pricePerUnit": 5.2,
+      "quantity": 100,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07"
+    },
+    {
+      "id": "r_seed_002",
+      "buyerId": "b1",
+      "rawInput": "Looking for 70 lbs of carrots for produce section",
+      "product": "Carrots",
+      "pricePerUnit": 2.3,
+      "quantity": 70,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07"
+    },
+    {
+      "id": "r_seed_003",
+      "buyerId": "b2",
+      "rawInput": "Need 40 lbs tomatoes, can accept heirloom",
+      "product": "Tomatoes",
+      "pricePerUnit": 6,
+      "quantity": 40,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07"
+    },
+    {
+      "id": "r_seed_004",
+      "buyerId": "b3",
+      "rawInput": "Require 60 lbs cooking onions this week",
+      "product": "Cooking Onions",
+      "pricePerUnit": 2.4,
+      "quantity": 60,
+      "unit": "lb",
+      "status": "OPEN",
+      "createdAt": "2026-03-07"
+    }
+  ],
+  "matches": [
+    {
+      "id": "m_1772922041685",
+      "listingId": "V_001",
+      "requestId": "B_101",
+      "score": 95,
+      "product": "Organic Apples",
+      "reason": "Exact product match, vendor supplies the full desired quantity at a price well within the buyer's budget.",
+      "status": "PROPOSED",
+      "createdAt": "2026-03-07"
+    }
+  ]
+}
